@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Rozwiązania dla biznesu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,25 +20,6 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
         <nav class="nav">
           <a class="logo" href="index.html"
             >Web<span class="logo--upper">Studio</span></a
@@ -62,6 +44,25 @@
                 <use href="./images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a>
           </li>
         </ul>
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
       </div>
     </header>
     <main>
@@ -166,10 +167,10 @@
           <ul class="team">
             <li class="team__card">
               <img
-                src="images/productdesigner.jpg"
+                src="images/productdesigner-b.jpg"
                 alt="John Doe - Product Designer"
-                width="270"
-                height="260"
+                width="100%"
+                height="100%"
               />
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
@@ -208,10 +209,10 @@
             </li>
             <li class="team__card">
               <img
-                src="images/frontenddev.jpg"
+                src="images/frontenddev-b.jpg"
                 alt="John Doe - Frontend Developer"
-                width="270"
-                height="260"
+                width="100%"
+                height="100%"
               />
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
@@ -250,10 +251,10 @@
             </li>
             <li class="team__card">
               <img
-                src="images/marketing.jpg"
+                src="images/marketing-b.jpg"
                 alt="John Doe - Marketing"
-                width="270"
-                height="260"
+                width="100%"
+                height="100%"
               />
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
@@ -292,10 +293,10 @@
             </li>
             <li class="team__card">
               <img
-                src="images/uidesigner.jpg"
+                src="images/uidesigner-b.jpg"
                 alt="John Doe - UI Designer"
-                width="270"
-                height="260"
+                width="100%"
+                height="100%"
               />
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
@@ -387,7 +388,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        
           <a class="logo" href="index.html"
             >Web<span class="logo--bottom">Studio</span></a
           >
@@ -414,7 +415,7 @@
               </li>
             </ul>
           </address>
-        </div>
+        
         <div class="invite">
           <p class="invite__title">dołącz do nas</p>
           <ul class="socials socials__footer">
@@ -481,10 +482,25 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+        <li><a href="index.html" class="mobile-menu__link mobile-menu__link--current">Agencja</a></li>
+        <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+        <li><a href="#" class="mobile-menu__link">Kontkat</a></li>
+      </ul>
+      <ul>
+        <li><a href="mailto:info@devstudio.com">
+              info@devstudio.com</a></li>
+        <li><a href="tel:+48111111111"
+              >+48 111 111 111</a></li>
+      </ul> 
+<ul class="mobiele-socials">
+              <li><a class="mobile-socials__link" href="#">Instagram</a></li>
+              <li><a class="mobile-socials__link" href="#">Twitter</a></li>
+              <li><a class="mobile-socials__link" href="#">Facebook</a></li>
+              <li><a class="mobile-socials__link" href="#">Linkedin</a></li>
+        </ul>
+
+
+
       </ul>
     </div>
      <div class="backdrop is-hidden" data-modal>

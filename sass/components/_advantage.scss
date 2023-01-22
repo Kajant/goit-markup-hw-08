@@ -2,10 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 
 
 &__item {
-    flex-basis: calc((100% - 90px) / 4);
+    // flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc(100% - 30px);
+    min-width: 320px;
 }
 
 &__icon {
@@ -20,6 +23,7 @@
     margin-top: 30px;
     font-weight: 700;
     font-size: 14px;
+    text-align: center;
     text-transform: uppercase;
     line-height: 1.1;
 }

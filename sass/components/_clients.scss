@@ -1,14 +1,16 @@
 .client {
     display: flex;
     margin-top: 50px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 
 
 &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    flex-basis: calc((100% - 30px) / 2);
     height: 92px;
     border: 1px solid currentColor;
     border-radius: 4px;

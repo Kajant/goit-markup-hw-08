@@ -2,25 +2,26 @@
     background-color: $color-slogan-footer-backround;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/background.jpg);
+        url(../images/background-b.jpg);
     background-repeat: no-repeat;
+    background-position: 50% 50%;
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     background-size: cover;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     margin: 0 auto;
 
 
 &__title {
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.4;
     color: $color-white;
     letter-spacing: 0.06em;
-    width: 696px;
+    max-width: 365px;
     margin: 0 auto;
 }
 
