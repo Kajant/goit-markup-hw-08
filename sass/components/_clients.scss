@@ -1,0 +1,27 @@
+.client {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+
+
+&__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: $color-social-icon;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+
+&:hover,
+&:focus {
+    color: $color-brand-blue;
+    outline: transparent;
+}
+}
+}

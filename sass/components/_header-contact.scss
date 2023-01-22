@@ -1,0 +1,31 @@
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+
+
+&__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+&__link {
+    font-weight: 500;
+    color: $color-item-text;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+    text-align: right;
+    display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+
+&:hover,
+&:focus {
+    color: $color-brand-blue;
+    outline: transparent;
+}
+}
+}

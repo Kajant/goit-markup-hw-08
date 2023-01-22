@@ -1,0 +1,40 @@
+.socials {
+    display: flex;
+    margin-top: 16px;
+    gap: 10px;
+    justify-content: center;
+
+
+&__footer {
+    margin-top: 20px;
+}
+
+&__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+
+&--member {
+    color: $color-social-icon;
+}
+
+&--footer {
+    background-color: $color-social-icon-footer;
+    color: $color-white;
+}
+
+&:hover,
+&:focus {
+    background-color: $color-brand-blue;
+    color: $color-white;
+    outline: transparent;
+}
+}
+}

@@ -1,0 +1,50 @@
+.footer {
+    background-color: $color-slogan-footer-backround;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+&__container {
+    display: flex;
+    align-items: baseline;
+}
+}
+
+.address {
+    margin-top: 20px;
+
+
+&__container li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+&__link {
+    color: $color-white;
+    line-height: 1.7;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+
+&--contact {
+    color: $color-footer-text;
+}
+
+&:hover,
+&:focus {
+    color: $color-brand-blue;
+    outline: transparent;
+}
+}
+}
+.invite {
+    margin-left: 70px;
+
+
+&__title {
+    line-height: 1.14;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+}

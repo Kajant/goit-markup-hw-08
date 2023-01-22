@@ -1,0 +1,29 @@
+.offer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 30px;
+
+
+&__section {
+    padding-top: 0;
+}
+
+&__item {
+    position: relative;
+}
+
+&__title {
+    display: flex;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 370px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-job-background;
+    position: absolute;
+    bottom: 0;
+}
+}
