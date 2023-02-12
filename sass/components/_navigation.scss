@@ -45,6 +45,7 @@
     transition-property: transform, background-color;
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
+    overflow: scroll;
 }
 
 .menu-container.is-open {
