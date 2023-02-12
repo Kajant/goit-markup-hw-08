@@ -1,16 +1,30 @@
 .contact {
     display: none;
-    align-items: center;
-    gap: 50px;
     margin-left: auto;
+
+            @media screen and (min-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: flex-start;
+                    
+                }
+            @media screen and (min-width: 1200px) {
+                    flex-direction: row;
+                    gap: 30px;
+                    align-items: center; }
 
 
 &__icon {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;}
 }
 
 &__link {
+    font-size: 12px;
     font-weight: 500;
     color: $color-item-text;
     letter-spacing: 0.02em;
@@ -20,6 +34,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 
 
 &:hover,

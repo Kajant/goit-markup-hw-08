@@ -131,7 +131,12 @@
 
 &__text {
     color: $color-item-text;
-    text-align: right;
+    text-align: left;
+    font-size: 12px;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
 }
 
 &__link {

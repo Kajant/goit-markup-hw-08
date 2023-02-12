@@ -134,6 +134,7 @@
             <li class="offer__item">
               <img
                 src="images/job1.jpg"
+                srcset="images/job1@2x.jpg 2x"
                 alt="Dłonie na klawiaturze komputera. Na ekranie widoczne linie tekstu."
                 width="370px"
                 height="294px"
@@ -143,6 +144,7 @@
             <li class="offer__item">
               <img
                 src="images/job2.jpg"
+                srcset="images/job2@2x.jpg 2x"
                 alt="Smartfony na ekranie komputera."
                 width="370"
                 height="294"
@@ -152,6 +154,7 @@
             <li class="offer__item">
               <img
                 src="images/job3.jpg"
+                srcset="images/job3@2x.jpg 2x"
                 alt="Paleta kolorów na ekranie tableta."
                 width="370"
                 height="294"
@@ -167,11 +170,19 @@
           <ul class="team">
             <li class="team__card">
               <img
-                src="images/productdesigner-b.jpg"
-                alt="John Doe - Product Designer"
-                width="100%"
-                height="100%"
-              />
+              srcset="
+                ./images/team/team1_mb@1x.jpg 450w,
+                ./images/team/team1_mb@2x.jpg 900w,
+                ./images/team/team1_tb@1x.jpg 354w,
+                ./images/team/team1_tb@2x.jpg 708w,
+                ./images/team/team1_dt@1x.jpg 270w,
+                ./images/team/team1_dt@2x.jpg 540w
+              "
+              src="./images/team/team1_mb@1x.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              min-width="270"
+              alt="John Doe - Product Designer"
+            />
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
                 <p class="member__position">Product Designer</p>
@@ -209,11 +220,19 @@
             </li>
             <li class="team__card">
               <img
-                src="images/frontenddev-b.jpg"
-                alt="John Doe - Frontend Developer"
-                width="100%"
-                height="100%"
-              />
+              srcset="
+                ./images/team/team2_mb@1x.jpg 450w,
+                ./images/team/team2_mb@2x.jpg 900w,
+                ./images/team/team2_tb@1x.jpg 354w,
+                ./images/team/team2_tb@2x.jpg 708w,
+                ./images/team/team2_dt@1x.jpg 270w,
+                ./images/team/team2_dt@2x.jpg 540w
+              "
+              src="./images/team/team2_mb@1x.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              min-width="270"
+              alt="John Doe - Frontend Developer"
+            />
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
                 <p class="member__position">Frontend Developer</p>
@@ -251,11 +270,19 @@
             </li>
             <li class="team__card">
               <img
-                src="images/marketing-b.jpg"
-                alt="John Doe - Marketing"
-                width="100%"
-                height="100%"
-              />
+              srcset="
+                ./images/team/team3_mb@1x.jpg 450w,
+                ./images/team/team3_mb@2x.jpg 900w,
+                ./images/team/team3_tb@1x.jpg 354w,
+                ./images/team/team3_tb@2x.jpg 708w,
+                ./images/team/team3_dt@1x.jpg 270w,
+                ./images/team/team3_dt@2x.jpg 540w
+              "
+              src="./images/team/team3_mb@1x.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              min-width="270"
+              alt="John Doe - Marketing"
+            />
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
                 <p class="member__position">Marketing</p>
@@ -293,11 +320,19 @@
             </li>
             <li class="team__card">
               <img
-                src="images/uidesigner-b.jpg"
-                alt="John Doe - UI Designer"
-                width="100%"
-                height="100%"
-              />
+              srcset="
+                ./images/team/team4_mb@1x.jpg 450w,
+                ./images/team/team4_mb@2x.jpg 900w,
+                ./images/team/team4_tb@1x.jpg 354w,
+                ./images/team/team4_tb@2x.jpg 708w,
+                ./images/team/team4_dt@1x.jpg 270w,
+                ./images/team/team4_dt@2x.jpg 540w
+              "
+              src="./images/team/team4_mb@1x.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              min-width="270"
+              alt="John Doe - UI Designer"
+            />
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
                 <p class="member__position">UI Designer</p>
@@ -388,7 +423,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        
+      <div>
           <a class="logo" href="index.html"
             >Web<span class="logo--bottom">Studio</span></a
           >
@@ -415,7 +450,7 @@
               </li>
             </ul>
           </address>
-        
+        </div>
         <div class="invite">
           <p class="invite__title">dołącz do nas</p>
           <ul class="socials socials__footer">
@@ -452,11 +487,11 @@
         <form class="newsletter" name="newsletter_form" autocomplete="on">
           <p class="invite__title">zapisz się do newslettera</p>
           <div class="newsletter__container">
-            <label>
+            <label class="newsletter__label">
               <input class="newsletter__input" type="email" name="newsletter" placeholder="E-mail">
             </label>          
            <button class="newsletter__btn" type="submit">Zapisz się
-            <svg class="newsletter__icon" width="24" height="24">
+            <svg style="fill: currentColor" class="newsletter__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
            </button>
@@ -466,19 +501,9 @@
     </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
+        <svg width="19" height="19">
+          <use href="./images/icons.svg#icon-x"></use>
+         </svg>
       </button>
 
       <ul class="mobile-menu">
@@ -486,21 +511,17 @@
         <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
         <li><a href="#" class="mobile-menu__link">Kontkat</a></li>
       </ul>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">
+      <ul class="mobile-contact">
+        <li><a class="mobile-contact__phone" href="tel:+48111111111"
+          >+48 111 111 111</a></li>
+        <li><a class="mobile-contact__mail" href="mailto:info@devstudio.com">
               info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111"
-              >+48 111 111 111</a></li>
       </ul> 
-<ul class="mobiele-socials">
-              <li><a class="mobile-socials__link" href="#">Instagram</a></li>
-              <li><a class="mobile-socials__link" href="#">Twitter</a></li>
-              <li><a class="mobile-socials__link" href="#">Facebook</a></li>
-              <li><a class="mobile-socials__link" href="#">Linkedin</a></li>
-        </ul>
-
-
-
+      <ul class="mobile-socials">
+        <li><a class="mobile-socials__link" href="#">Instagram</a></li>
+        <li><a class="mobile-socials__link" href="#">Twitter</a></li>
+        <li><a class="mobile-socials__link" href="#">Facebook</a></li>
+        <li><a class="mobile-socials__link" href="#">Linkedin</a></li>
       </ul>
     </div>
      <div class="backdrop is-hidden" data-modal>
