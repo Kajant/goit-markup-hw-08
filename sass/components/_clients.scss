@@ -5,6 +5,7 @@
     gap: 30px;
     flex-wrap: wrap;
     
+    
     @media screen and (min-width: 1200px) {
         margin-top: 50px;
         flex-wrap: nowrap;
@@ -15,8 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: calc((100% - 30px) / 2);
     height: 92px;
+    width: 210px;
     border: 1px solid currentColor;
     border-radius: 4px;
     color: $color-social-icon;
@@ -25,10 +26,10 @@
     transition-timing-function: $timing-function;
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 60px) / 3);
+        width: 226px;
     }
             @media screen and (min-width: 1200px) {
-                flex-basis: calc((100% - 150px) / 6);
+                width: 170px;
             }
 
 
