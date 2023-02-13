@@ -10,27 +10,30 @@
         margin-top: 50px;
         flex-wrap: nowrap;
     }
+&__item {
+    flex-basis: calc((100% - 30px) / 2);
 
+        @media screen and (min-width: 768px) {
+                flex-basis: calc((100% - 60px) / 3);
+            }
+        
+            @media screen and (min-width: 1200px) {
+                flex-basis: calc((100% - 150px) / 6);;
+            }
+}
 
 &__link {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 92px;
-    width: 210px;
+    flex-grow: 1;
     border: 1px solid currentColor;
     border-radius: 4px;
     color: $color-social-icon;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
-
-    @media screen and (min-width: 768px) {
-        width: 226px;
-    }
-            @media screen and (min-width: 1200px) {
-                width: 170px;
-            }
 
 
 &:hover,

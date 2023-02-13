@@ -1,8 +1,7 @@
 .slogan {
     background-color: $color-slogan-footer-backround;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/background.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     max-width: 1600px;
@@ -48,5 +47,6 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 .slogan {
-  background-image: url(../images/background@2x.jpg);
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/background@2x.jpg);
 }}
