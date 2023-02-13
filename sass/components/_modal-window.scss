@@ -41,9 +41,9 @@
 
 .close {
     background-color: transparent;
-}
 
-.close__btn {
+
+&__btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -55,4 +55,5 @@
     border-radius: 50%;
     background-color: $color-white;
     border: 1px solid $color-modal-close-border;
+}
 }
